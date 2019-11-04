@@ -19,13 +19,42 @@ html {
   stroke: #000;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke-width: 3px
+  stroke-width: 3px;
 }
 
-.ears {
+@keyframes look {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(.5em);
+  }
+
+  75% {
+    transform: translateX(-.5em);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 
 }
 
 .eyes {
+  transform: translateX(-.5em);
+  animation: look 2s linear infinite;
+}
 
+.ears {
+  transition: .5s;
+}
+
+.ears:hover {
+  transform: translateY(-12px);
+}
+
+.face:hover > .ears {
+  transform: translateY(-12px);
 }
