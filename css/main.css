@@ -1,0 +1,31 @@
+html {
+  font-family: sans-serif;
+}
+
+.ear-outter, .head {
+  fill: #673200;
+}
+
+.ear-inner, .nose {
+  fill: #ffaaca;
+}
+
+.eyes-back, .mouth-back {
+  fill: #c65b00;
+}
+
+.mouth {
+  fill: none;
+  stroke: #000;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3px
+}
+
+.ears {
+
+}
+
+.eyes {
+
+}
